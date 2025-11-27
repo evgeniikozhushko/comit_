@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="js/index.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>User Filter</title>
+</head>
+
+<body>
+  <div id="root">
+    <h1 class="visually-hidden">Random users</h1>
+    <section>
+      <header>
+        <h2>Filtering Users</h2>
+        <small>Search by name or location</small>
+      </header>
+
+      <form action="">
+        <div role="search">
+          <label>
+            <span class="visually-hidden">Search for users</span>
+            <p class="error" role="alert"></p>
+            <input
+              type="search"
+              role="combobox"
+              placeholder="Search"
+              value=""
+              aria-controls="suggestions"
+              aria-autocomplete="list"
+            >
+          </label>
+        </div>
+      </form>
+
+      <ul
+        id="suggestions"
+        class="cards"
+        role="list"
+        aria-live="polite">
+      </ul>
+    </section>
+  </div>
+</body>
+
+</html>
+
+<!-- <form role="search">
+        <label for="search-input" class="visually-hidden">Search for users</label>
+
+        <p id="error-message" class="error" role="alert"></p>
+
+        <input type="search" id="search-input" placeholder="Search" value="" role="combobox" aria-controls="suggestions"
+          aria-autocomplete="list" aria-describedby="error-message" />
+
+        <ul id="suggestions" role="listbox">
+        </ul>
+      </form> -->

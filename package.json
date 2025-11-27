@@ -1,0 +1,25 @@
+{
+  "name": "user-filter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "run-p lint:* --continue-on-error",
+    "lint:js": "eslint",
+    "lint:css": "stylelint '**/*.css'",
+    "fix:js": "eslint --fix",
+    "fix:css": "stylelint '**/*.css' --fix",
+    "firmat": "prettier --write"
+  },
+  "author": "Juan",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.3",
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@stylistic/eslint-plugin": "^5.4.0",
+    "eslint": "^9.37.0",
+    "eslint-plugin-unicorn": "^61.0.2",
+    "globals": "^16.4.0"
+  }
+}
