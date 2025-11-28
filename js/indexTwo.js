@@ -60,7 +60,8 @@ async function init() {
     const mappedUsers = mapUsers(rawUsers);
     displayUsers(mappedUsers);
   }
-  catch (error) {
+  catch (err) {
+    console.error('Initialization error:', err);
     displayError('Failed to load users. Please try again.');
   }
 }

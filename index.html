@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script defer src="js/index.js"></script>
+ 
   <link rel="stylesheet" href="css/style.css" />
   <title>User Filter</title>
 </head>
@@ -35,8 +35,14 @@
         </div>
       </form>
 
+      <div id='user' data-js="user-data"></div>
+      <div data-js="user-name"></div>
+      <div data-js="user-location"></div>
+      <div data-js="search-form"></div>
+      <div data-js="search-box"></div>
+
       <ul
-        id="suggestions"
+        id="user"
         class="cards"
         role="list"
         aria-live="polite">
@@ -46,6 +52,7 @@
 </body>
 
 </html>
+ <script type="module" src="js/index.js"></script>
 
 <!-- <form role="search">
         <label for="search-input" class="visually-hidden">Search for users</label>
